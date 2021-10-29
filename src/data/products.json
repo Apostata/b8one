@@ -1,0 +1,20 @@
+[
+  {
+    "id": "prod1",
+    "image": "http://www.graphicsfuel.com/wp-content/uploads/2015/01/product-box-psd-300x204.jpg",
+    "name": "Nome prod1",
+    "price": 12.99,
+    "with_discont": 9.99,
+    "installments": 10,
+    "isFavourite": false
+  },
+  {
+    "id": "prod2",
+    "image": "http://www.graphicsfuel.com/wp-content/uploads/2015/01/product-box-psd-300x204.jpg",
+    "name": "Nome prod2",
+    "price": 23.89,
+    "with_discont": 19.99,
+    "installments": 10,
+    "isFavourite": false
+  }
+]

@@ -1,0 +1,144 @@
+.shelf_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px;
+  width: 304px;
+  height: 568px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  margin: 15px;
+}
+
+.shelf_img {
+  position: relative;
+  height: 240px;
+  width: 240px;
+  height: 240px;
+  overflow: hidden;
+
+  /* background: url(.png); */
+}
+
+.shelf_img img {
+  position: absolute;
+  top: 0;
+  left: -35px;
+  z-index: 1;
+}
+
+.shelf_heart_container {
+  position: absolute;
+  right: 0%;
+  top: 0%;
+  width: 48px;
+  height: 48px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  transition: all 300ms ease-in-out 0ms;
+  z-index: 2;
+}
+.shelf_heart_container:hover {
+  background: #fee5ec;
+}
+
+.shelf_heart_container svg path {
+  transition: all 300ms ease-in-out 0ms;
+  stroke: black;
+}
+.shelf_heart_container:hover svg path {
+  stroke: red;
+  fill: #fee5ec;
+}
+.shelf_heart_container.ativo {
+  background: red;
+}
+.shelf_heart_container.ativo svg path {
+  stroke: white;
+  fill: white;
+}
+
+.shelf_heart_container.ativo:hover {
+  background: #c22539;
+}
+
+.shelf_heart {
+  position: absolute;
+  left: 25%;
+  right: 25%;
+  top: 31.25%;
+  bottom: 25%;
+}
+
+.shelf_data {
+  display: flex;
+  flex-flow: column;
+}
+
+.shelf_desc {
+  width: 100%;
+  height: 60px;
+  text-align: left;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #1c1c1c;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 24px 0px;
+  /* border-radius: nullpx; */
+}
+
+.shelf_from_price {
+  width: 100%;
+  height: 20px;
+  text-align: left;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.005em;
+  text-decoration-line: line-through;
+  color: #b5b5b6;
+  margin: 4px 0px;
+}
+
+.shelf_to_price {
+  text-align: left;
+  width: 100%;
+  height: 24px;
+  text-align: left;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.005em;
+  color: #da4b4f;
+  margin: 4px 0px;
+}
+
+.installments {
+  text-align: left;
+  width: 240px;
+  height: 16px;
+  left: 0px;
+  top: 52px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.005em;
+  color: #848587;
+  margin: 4px 0px;
+}
